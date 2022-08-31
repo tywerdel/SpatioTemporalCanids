@@ -6,11 +6,6 @@
 ## KANSAS STATE UNIVERSITY AND TEXAS A&M UNIVERSITY##
 ## Last Updated 2022-08-30 ##
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-## Clear memory and variables in R
-rm(list=ls())
-
-## Set working directory
-setwd("C:/Users/tywer/OneDrive - Texas A&M AgriLife/GitHubRepository/SpatiotemporalEcoApps")
 
 ## Load utility created by Gallo et al. 2019 Animal Ecology
 source("2019-01-15_gallo_et_al_JAE_utility_script.R")
@@ -27,7 +22,6 @@ species_names <- read.table("./Data/Werdel_Species_Used.txt", header = TRUE)
 site_names <- read.table("./Data/Werdel_Sites_Used.txt", header = TRUE, colClasses = "character")
 # We do not use data from this site
 site_names <- site_names[,] 
-
 
 ## Set up data for three species co-occurence model and vigilance binomial model
 # Function that sets up data for JAGs run
@@ -101,7 +95,7 @@ vig_JAGS_setup <- function(index, model) {
   ############
   ############ Here is where we determine the landscape covariate to run model
   ###(CRPPrp, SGPPrp, RowcropPrp, TotalEdge) ##
-  hab <- as.data.frame(covdat$RowcropPrp)
+  hab <- as.data.frame(covdat$TotalEdge)
   pc <-as.matrix(scale(hab))
   pc
   
@@ -209,7 +203,7 @@ three <- c(1,2,3)
 mod_3sp <- vig_JAGS_setup(three, "Werdel_3sp_Interactions.R")
 
 ###Run for the Sif Example code.
-saveRDS(mod_3sp$model_results,"model_results_Full_Ag_EcoApps.RDS")
+saveRDS(mod_3sp$model_results,"model_results_Full_TE_EcoApps.RDS")
 
 ##If you are doing this all in one shot and just switching right over to SIF example code###
 mrf <- mod_3sp$model_results

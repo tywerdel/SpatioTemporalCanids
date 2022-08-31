@@ -1,9 +1,3 @@
-## Clear memory and variables in R
-rm(list=ls())
-
-## Set working directory
-setwd("C:/Users/tywer/OneDrive - Texas A&M AgriLife/GitHubRepository/SpatiotemporalEcoApps")
-
 library(runjags)
 library(plotrix)
 library(ggplot2)
@@ -124,7 +118,7 @@ round(
   3
 )
 
-write.csv(round(test, 2), "parametersummary_Ag_EcoApps.csv")
+write.csv(round(test, 2), "parametersummary_TE_EcoApps.csv")
 
 # the environmental gradient ### This is the range of scaled CRP, if you change covariates, this needs to change
 #Determine scaled range for Sif example code
