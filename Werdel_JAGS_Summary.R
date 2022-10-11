@@ -118,7 +118,7 @@ round(
   3
 )
 
-write.csv(round(test, 2), "parametersummary_TE_EcoApps.csv")
+write.csv(round(test, 2), "parametersummary_CRP_EcoApps.csv")
 
 # the environmental gradient ### This is the range of scaled CRP, if you change covariates, this needs to change
 #Determine scaled range for Sif example code

@@ -95,7 +95,7 @@ vig_JAGS_setup <- function(index, model) {
   ############
   ############ Here is where we determine the landscape covariate to run model
   ###(CRPPrp, SGPPrp, RowcropPrp, TotalEdge) ##
-  hab <- as.data.frame(covdat$TotalEdge)
+  hab <- as.data.frame(covdat$CRPPrp)
   pc <-as.matrix(scale(hab))
   pc
   
@@ -203,7 +203,7 @@ three <- c(1,2,3)
 mod_3sp <- vig_JAGS_setup(three, "Werdel_3sp_Interactions.R")
 
 ###Run for the Sif Example code.
-saveRDS(mod_3sp$model_results,"model_results_Full_TE_EcoApps.RDS")
+saveRDS(mod_3sp$model_results,"model_results_Full_CRP_EcoApps.RDS")
 
 ##If you are doing this all in one shot and just switching right over to SIF example code###
 mrf <- mod_3sp$model_results
