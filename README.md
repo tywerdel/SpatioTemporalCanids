@@ -7,8 +7,6 @@ Werdel et al. (In Review) Influence of landscape composition on spatiotemporal i
 It can be used to estimate the influence of landscape characteristics on spatial interactions between species. Additional temporal overlap code can be used to determine if species activity overlapped significantly more or less than expected.
 
 ## ***Two-Species Occupancy Model***
-=======
-**Two-Species Occupancy Model**
 
 ## **Scripts:**
 There are 4 scripts needed to run this analysis
@@ -43,3 +41,18 @@ There are 8 data files needed to run this analysis
 
 **Note:** All of these files must be within your working directory for the analysis to work. Our analysis was done in parallel and used 12 cores. Therefore, you will need to adjust the settings annotated within Werdel_JAGS_Model_EcoApps.R accordingly.
 
+## ***Temporal Overlap***
+
+## **Scripts:**
+There is 1 script needed to run this analysis
+
+**Overlap.R** - script that runs entire temporal overlap analysis and produces plots
+
+## **Data Files:**
+There are 3 data files needed to run this analysis
+
+**CoyFoxActivity.csv** - All coyote and swift fox temporal activity and site covariates
+
+**CoyoteActivity.csv** - All coyote temporal activity
+
+**SFActivity.csv** - All swift fox temporal activity
