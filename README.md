@@ -6,7 +6,7 @@ Werdel et al. (In Review) Influence of landscape composition on spatiotemporal i
 
 It can be used to estimate the influence of landscape characteristics on spatial interactions between species. Additional temporal overlap code can be used to determine if species activity overlapped significantly more or less than expected.
 
-##Two-Species Occupancy Model
+#**Two-Species Occupancy Model**
 
 ## **Scripts:**
 There are 4 scripts needed to run this analysis
