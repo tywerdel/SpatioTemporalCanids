@@ -2,7 +2,7 @@
 
 This is model code from:
 
-Werdel et al. (In Review) Influence of landscape composition on spatiotemporal interactions between sympatric canids. Ecological Applications.
+Werdel et al. 2025: Influence of landscape composition on spatiotemporal interactions between sympatric canids. Ecological Applications.
 
 It can be used to estimate the influence of landscape characteristics on spatial interactions between species. Additional temporal overlap code can be used to determine if species activity overlapped significantly more or less than expected.
 
