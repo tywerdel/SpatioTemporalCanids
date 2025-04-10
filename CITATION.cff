@@ -1,0 +1,12 @@
+cff-version: 1.0.0
+message: "If you use this software, please cite it as below."
+title: SpatioTemporalCanids
+version: 1.0.0
+doi: 10.5281/zenodo.15191398 
+date-released: 2025-04-10    
+authors:
+  - family-names: Werdel
+    given-names: Ty
+    affiliation: Texas A&M University
+license: MIT
+repository-code: https://github.com/tywerdel/SpatioTemporalCanids
